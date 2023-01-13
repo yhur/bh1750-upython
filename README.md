@@ -11,3 +11,20 @@ So anyone who would like to install PinInk's bh1750 library to micoropython envi
 import mip
 mip.install('github:yhur/bh1750-upython/bh1750-upython-mip.json')
 ```
+
+
+And as PinkInk stated, this is how to use this library once installed with the mip following above step.
+```python
+from machine import Pin, SoftI2C
+from bh1750 import BH1750
+
+# init eps8266 i2c
+scl = Pin(4)
+sda = Pin(3)
+i2c = SoftI2C(scl,sda)
+
+s = BH1750(i2c)
+
+while True:
+    print(s.luminance(BH1750.ONCE_HIRES_1))
+```
