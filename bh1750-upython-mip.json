@@ -3,7 +3,7 @@
       ["bh1750/__init__.py", "github:yhur/bh1750-upython/bh1750/__init__.py"]
     ],
     "deps": [
-      []
+      [[]]
     ],
     "version": "0.1"
 }
