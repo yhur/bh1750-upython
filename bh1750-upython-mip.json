@@ -2,6 +2,8 @@
     "urls": [
       ["bh1750/__init__.py", "github:yhur/bh1750-upython/bh1750/__init__.py"]
     ],
-    "deps": [],
+    "deps": [
+        []
+    ],
     "version": "0.1"
 }
